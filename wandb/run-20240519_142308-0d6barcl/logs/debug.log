@@ -1,0 +1,68 @@
+2024-05-19 14:23:08,855 INFO    MainThread:369 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-19 14:23:08,855 INFO    MainThread:369 [wandb_setup.py:_flush():76] Configure stats pid to 369
+2024-05-19 14:23:08,855 INFO    MainThread:369 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-05-19 14:23:08,855 INFO    MainThread:369 [wandb_setup.py:_flush():76] Loading settings from /content/wandb/settings
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-19 14:23:08,856 ERROR   MainThread:369 [wandb_setup.py:_flush():78] error in wandb.init()
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/IPython/core/interactiveshell.py", line 3553, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-9-72256b03202d>", line 1, in <cell line: 1>
+    wandb.init(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 1178, in init
+    wandb._sentry.reraise(e)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/analytics/sentry.py", line 155, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 1163, in init
+    wi.setup(kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 300, in setup
+    wandb_login._login(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_login.py", line 334, in _login
+    wlogin.prompt_api_key()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_login.py", line 256, in prompt_api_key
+    key, status = self._prompt_api_key()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_login.py", line 236, in _prompt_api_key
+    key = apikey.prompt_api_key(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/apikey.py", line 151, in prompt_api_key
+    key = input_callback(api_ask).strip()
+  File "/usr/local/lib/python3.10/dist-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/usr/local/lib/python3.10/dist-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_init.py:_log_setup():520] Logging user logs to /content/wandb/run-20240519_142308-0d6barcl/logs/debug.log
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_init.py:_log_setup():521] Logging internal logs to /content/wandb/run-20240519_142308-0d6barcl/logs/debug-internal.log
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_init.py:_jupyter_setup():466] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x79aab87eb700>
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_init.py:init():560] calling init triggers
+2024-05-19 14:23:08,856 INFO    MainThread:369 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {'filter_1': 10, 'kernel_1': 3, 'activation_1': 'relu', 'strides_1': 1, 'MaxPoolSize_1': 2, 'filter_2': 10, 'kernel_2': 3, 'activation_2': 'relu', 'strides_2': 1, 'filter_3': 10, 'kernel_3': 3, 'activation_3': 'relu', 'strides_3': 1, 'filter_4': 10, 'kernel_4': 3, 'activation_4': 'relu', 'strides_4': 1, 'MaxPoolSize_2': 2, 'padding': 'valid', 'dense_1': 1, 'activation_output': 'sigmoid', 'optimizer': 'Adam', 'loss': 'binary_crossentropy', 'metric': 'accuracy', 'epoch': 5, 'batch_size': 32}
+2024-05-19 14:23:08,857 INFO    MainThread:369 [wandb_init.py:init():610] starting backend
+2024-05-19 14:23:08,857 INFO    MainThread:369 [wandb_init.py:init():614] setting up manager
+2024-05-19 14:23:08,858 INFO    MainThread:369 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-19 14:23:08,860 INFO    MainThread:369 [wandb_init.py:init():622] backend started and connected
+2024-05-19 14:23:08,875 INFO    MainThread:369 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-19 14:23:13,899 INFO    MainThread:369 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-19 14:23:13,899 INFO    MainThread:369 [wandb_init.py:init():711] updated telemetry
+2024-05-19 14:23:13,902 INFO    MainThread:369 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-19 14:23:14,373 INFO    MainThread:369 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-19 14:23:14,527 INFO    MainThread:369 [wandb_run.py:_on_init():2405] got version response 
+2024-05-19 14:23:14,528 INFO    MainThread:369 [wandb_init.py:init():795] starting run threads in backend
+2024-05-19 14:23:14,999 INFO    MainThread:369 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-19 14:23:14,999 INFO    MainThread:369 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-19 14:23:14,999 INFO    MainThread:369 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-19 14:23:14,999 INFO    MainThread:369 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-19 14:23:15,001 INFO    MainThread:369 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-19 14:25:36,313 INFO    MainThread:369 [wandb_run.py:_finish():2103] finishing run muhamadhaseeb2001/CNN-V1/0d6barcl
+2024-05-19 14:25:36,314 INFO    MainThread:369 [jupyter.py:save_history():445] not saving jupyter history
+2024-05-19 14:25:36,314 INFO    MainThread:369 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-19 14:25:36,314 INFO    MainThread:369 [wandb_init.py:_jupyter_teardown():448] cleaning up jupyter logic
+2024-05-19 14:25:36,314 INFO    MainThread:369 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-19 14:25:36,314 INFO    MainThread:369 [wandb_run.py:_restore():2326] restore
+2024-05-19 14:25:36,314 INFO    MainThread:369 [wandb_run.py:_restore():2332] restore done
+2024-05-19 14:25:44,235 INFO    MainThread:369 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-19 14:25:44,236 INFO    MainThread:369 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-19 14:25:44,247 INFO    MainThread:369 [wandb_run.py:_footer_sync_info():3953] logging synced files
