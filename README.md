@@ -18,4 +18,4 @@ This project not only demonstrates the application of CNNs in image classificati
 
 ---
 
-![CNNandCV](https://github.com/haseebrj17/CNNandCV/assets/56214816/6978062c-c925-44d3-abf2-6e9fe4f21f51)
+![CnnAndCV](https://github.com/haseebrj17/CNNandCV/assets/56214816/c1cd4e35-fa1b-47d2-a2f0-9ada65f51630)
