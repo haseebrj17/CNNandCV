@@ -1,4 +1,6 @@
 ---
+[WandB Workspace Link](https://wandb.ai/muhamadhaseeb2001/CNN-V1?nw=nwusermuhamadhaseeb2001)
+---
 
 ## Food Classification with CNN and CV
 
@@ -15,3 +17,5 @@ Performance metrics such as accuracy, precision, and recall are computed to eval
 This project not only demonstrates the application of CNNs in image classification but also provides a framework for experimenting with different architectures and preprocessing techniques to achieve optimal results in computer vision tasks.
 
 ---
+
+![CNNandCV](https://github.com/haseebrj17/CNNandCV/assets/56214816/6978062c-c925-44d3-abf2-6e9fe4f21f51)
